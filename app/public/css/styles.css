@@ -1,0 +1,640 @@
+/* General */
+
+* {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body {
+    min-height: 100vh;
+    padding-bottom: 100px;
+    position: relative;
+    overflow-x: hidden;
+}
+
+#navbar img {
+    width: 60px;
+}
+
+#cards-container {
+    max-width: 100%; /* Largura total da div que cabe na tela */
+    overflow-x: auto; /* Adiciona a barra de rolagem horizontal quando necessário */
+    white-space: nowrap; /* Impede que o conteúdo quebre para a próxima linha */
+    display: flex; /* Cria um contêiner flexível para alinhar os cards lado a lado */
+    flex-wrap: nowrap; /* Impede que os cards quebrem para a próxima linha (flex-wrap) */
+    padding-bottom: 15px;
+}
+
+
+
+
+/* Estilo para o contêiner do formulário */
+#event-create-container {
+    background-color: #f0f0f0; /* Fundo cinza claro */
+    padding: 30px; /* Espaçamento interno */
+    border: 1px solid #e0e0e0; /* Borda fina cinza */
+    border-radius: 5px; /* Cantos arredondados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+/* Estilo para o título do formulário */
+#event-create-container h1 {
+    text-align: center; /* Centralizar o texto */
+    margin-top: 20px; /* Espaçamento superior */
+}
+
+/* Estilo para os campos de entrada e caixas de texto */
+.form-group input,
+.form-group textarea,
+.form-group select {
+    width: 100%; /* Largura total */
+    margin: 5px 0; /* Espaçamento superior e inferior */
+    padding: 10px; /* Espaçamento interno */
+    border: 1px solid #ccc; /* Borda fina cinza */
+    border-radius: 5px; /* Cantos arredondados */
+}
+
+/* Estilo para o botão de envio */
+.btn-primary {
+    background-color: #007BFF; /* Cor de destaque azul */
+    color: #fff; /* Cor do texto branco */
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px; /* Espaçamento interno do botão */
+    text-transform: uppercase; /* Texto em maiúsculas */
+    cursor: pointer; /* Ícone de cursor de mão */
+}
+
+/* Efeito hover para o botão de envio */
+.btn-primary:hover {
+    background-color: #0056b3; /* Cor azul mais escura ao passar o mouse */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.card {
+    width: 150px;
+    background-color: red;
+    margin-right: 10px; /* Espaço entre os cards */
+}
+
+#search-container {
+    background-image: url(../img/banner.jpg);
+    background-size: cover;
+    background-position: center center;
+    height: 400px;
+    padding: 50px;
+    text-align: center;
+}
+
+#search-container h1 {
+    color: #fdfdfd;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    margin-bottom: 30px;
+}
+
+
+#search-container form {
+    width: 50%;
+    margin: 0 auto;
+}
+
+
+#events-container {
+    padding: 50px;
+}
+
+#events-container h2 {
+    margin-bottom: 10px;
+}
+
+
+
+
+
+/* HEADER COMEÇO */
+
+
+header {
+    background-color: #777777; /* Cor de fundo escura */
+    color: #fff; /* Cor do texto branca */
+    padding: 0px 10px; /* Espaçamento interno */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+/* Estilizar a barra inferior do cabeçalho */
+header::after {
+    content: "";
+    display: block;
+    height: 3px;
+    background-color: #FF5733; /* Cor de destaque laranja */
+    margin-top: 10px; /* Margem superior */
+}
+
+#navbar {
+    justify-content: space-between;
+}
+
+/* Estilo para links do menu de navegação */
+.navbar-nav a {
+    color: #fff; /* Cor do texto branco */
+    text-decoration: none;
+    padding: 10px 20px; /* Espaçamento interno dos links */
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+/* Estilo para links de navegação quando o mouse passa por cima */
+.navbar-nav a:hover {
+    background-color: #FF5733; /* Cor de destaque laranja */
+    border-radius: 5px;
+}
+
+/* Estilizar o logotipo */
+
+
+
+/* HEADER FIM */
+
+
+/* Estilizar o botão "Saber mais" */
+#saberMaisEventoHome {
+    background-color: #FF5733; /* Cor de destaque laranja */
+    color: #fff; /* Cor do texto branco */
+    padding: 8px 16px; /* Espaçamento interno do botão */
+    border: none;
+    border-radius: 5px;
+    text-transform: uppercase; /* Texto em maiúsculas */
+    text-decoration: none;
+}
+
+/* Estilizar o botão "Saber mais" quando o mouse passa por cima */
+#saberMaisEventoHome:hover {
+    background-color: #FF8040; /* Cor laranja mais clara */
+}
+
+
+
+
+
+
+
+
+
+#card-product {
+    max-width: 320px;
+    padding: 0;
+}
+
+
+
+
+
+
+
+
+
+
+#events-container {
+    background-color: #f0f0f0; /* Fundo cinza claro */
+    padding: 30px; /* Espaçamento interno */
+    text-align: center;
+    border: 1px solid #e0e0e0; /* Borda fina cinza */
+    border-radius: 5px; /* Cantos arredondados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+#events-container h2 {
+    color: #333; /* Texto preto */
+    font-size: 28px; /* Tamanho grande */
+    margin-bottom: 10px; /* Espaço após o título */
+}
+
+#events-container .subtitle {
+    color: #666; /* Texto cinza mais escuro */
+    font-size: 16px; /* Tamanho de fonte normal */
+    margin-bottom: 30px; /* Espaço após o parágrafo */
+}
+
+#events-container img {
+    max-height: 200px;
+    width: 100%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    object-fit: cover; 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#card-product p {
+    color: #777; /* Cor do texto dos parágrafos */
+}
+
+#card-product .card-date {
+    color: #555; /* Cor do texto da data */
+    font-size: 0.9rem; /* Tamanho da fonte da data */
+    margin-top: 10px; /* Espaçamento superior */
+}
+
+#card-product .card-title {
+    color: #333; /* Cor do título */
+    font-size: 1.2rem; /* Tamanho da fonte do título */
+    margin-top: 10px; /* Espaçamento superior */
+    font-weight: bold; /* Texto em negrito */
+}
+
+#card-product .card-participantes {
+    color: #888; /* Cor do texto do número de participantes */
+    font-size: 0.9rem; /* Tamanho da fonte do número de participantes */
+    margin-top: 10px; /* Espaçamento superior */
+}
+
+
+
+
+
+
+
+
+
+
+.card-body {
+    text-align: start;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* BARRA DE ROLAGEM!!! */
+
+/* Barra de rolagem vertical */
+#cards-container::-webkit-scrollbar {
+    width: 10px;
+}
+
+#cards-container::-webkit-scrollbar-thumb {
+    background: #be233d; /* Vermelho claro */
+    border-radius: 200px;
+}
+
+#cards-container::-webkit-scrollbar-thumb:hover {
+    background: #8a1d2f; /* Vermelho mais escuro ao passar o mouse */
+}
+
+/* Adicione uma sombra suave quando a barra de rolagem estiver ativa */
+#cards-container::-webkit-scrollbar-thumb:active {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Barra de rolagem horizontal */
+#cards-container::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+#cards-container::-webkit-scrollbar-track:hover {
+    background: #ddd;
+}
+
+/* Estilo ao passar o mouse sobre a faixa de rolagem */
+#cards-container::-webkit-scrollbar-track:hover {
+    background: #ccc;
+}
+
+
+
+footer{
+    text-align: center;
+    background-color: #777777;
+    color: #FFF;
+    padding: 10px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+
+
+#nav-bar-home {
+    padding: 0px;
+}
+
+
+.card-description {
+    max-height: 100px; /* Altura máxima permitida antes da rolagem vertical */
+    overflow-y: auto; /* Habilitar a rolagem vertical quando necessário */
+}
+
+
+
+
+.msg-container {
+    background-color: #4CAF50; /* Cor de fundo verde (pode ajustar para a cor desejada) */
+    color: #fff; /* Cor do texto (geralmente branca em fundo verde) */
+    padding: 15px; /* Espaçamento interno */
+    border-radius: 5px; /* Borda arredondada */
+    text-align: center; /* Alinhamento de texto ao centro */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+            
+}
+
+.image-container img {
+    border: 1px solid rgb(173, 173, 173);
+    height: 200px;
+}
+
+
+
+
+
+
+
+.img-fluid{
+    width: 700px; /* Defina a largura desejada */
+    height: 50px; /* Defina a altura desejada */
+    object-fit: cover; /* Isso mantém a proporção e preenche o contêiner */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#image-container,
+#info-container {
+    margin-top: 30px;
+}
+
+
+
+#image-container img {
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#image-container img {
+    border-radius: 10px;
+    transition: transform 0.2s;
+}
+
+#image-container img:hover {
+    transform: scale(1.05);
+}
+
+
+#info-container h1 {
+    font-size: 36px;
+    font-weight: 900;
+}
+
+#info-container p {
+    font-size: 14px;
+    align-items: center;
+    display: flex;
+}
+
+#info-container h3,
+#description-container h3{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#info-container ion-icon{
+    font-size: 20px;
+    color: #F2A340;
+    padding-right: 6px;
+}
+
+#event-submit {
+    display: inline-block;
+    margin: 20px 0px;
+}
+
+#description-container {
+    margin-top: 35px;
+}
+
+#description-container p {
+    width: 550px;
+    word-wrap: break-word;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Adicione estilos personalizados para a classe custom-checkbox */
+.form-check.custom-checkbox input.form-check-input[type="checkbox"] {
+    /* Defina os estilos para o checkbox */
+    width: 20px; /* Largura desejada */
+    height: 20px; /* Altura desejada */
+    margin-right: 10px; /* Espaçamento à direita */
+}
+
+.form-check.custom-checkbox label.form-check-label {
+    /* Estilos para a label do checkbox */
+    display: inline; /* Manter a label na mesma linha */
+    vertical-align: middle; /* Alinhar verticalmente com o checkbox */
+    font-size: 16px; /* Tamanho da fonte desejado */
+    color: #333; /* Cor do texto desejada */
+}
+
+#checksbox {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0px;
+}
+
+.custom-checkbox {
+    display: flex !important; 
+    align-items: center !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#item-list-show {
+    align-items: center;
+    display: flex;
+}
+
+#items-list {
+    margin-top: 15px;
+    margin-bottom: 35px;
+    padding: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
